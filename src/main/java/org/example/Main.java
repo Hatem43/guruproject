@@ -246,5 +246,26 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
      */
+/*
+    @Test
+    public void verifydiscountcoupon(){
+        driver.get("http://live.techpanda.org/index.php/");
+        driver.findElement(By.xpath("//*[@id=\"header\"]/div/div[2]/div/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"header-account\"]/div/ul/li[1]/a")).click();
+        driver.findElement(By.name("login[username]")).sendKeys("hatemmadouh22@gmail.com");
+        driver.findElement(By.id("pass")).sendKeys("2278174Hd");
+        driver.findElement(By.xpath("//*[@id=\"send2\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"nav\"]/ol/li[1]/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/h2/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"product_addtocart_form\"]/div[4]/div/div/div[2]/button/span/span")).click();
+        WebElement discountcode=driver.findElement(By.xpath("//*[@id=\"coupon_code\"]"));
+        discountcode.sendKeys("GURU50");
+        driver.findElement(By.xpath("//*[@id=\"discount-coupon-form\"]/div/div/div/div/button/span/span")).click();
+        String expected="Coupon code \"GURU50\" was applied.";
+        String actual =driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/ul/li/ul/li/span")).getText();
+        Assert.assertEquals(expected,actual);
 
+    }
+
+ */
 }
