@@ -245,7 +245,6 @@ public class Main {
         String actual=driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]/h1")).getText();
         Assert.assertEquals(expected,actual);
     }
-
      */
 
 }
