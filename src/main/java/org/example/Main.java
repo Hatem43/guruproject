@@ -21,7 +21,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         driver = new ChromeDriver();
     }
-/*
+
     @Test(priority = 0)
     public void verifyhomepagetitle(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -61,8 +61,7 @@ public class Main {
         Assert.assertEquals(productprice,prouctdetailsprice);
     }
 
- */
-    /*
+
     @Test(priority = 4)
     public void addtocartwithhighquantity(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -75,8 +74,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-/*
+ 
     @Test(priority = 5)
     public void removefromcart(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -87,8 +85,7 @@ public class Main {
         String actualtext=driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[2]/p[1]")).getText();
         Assert.assertEquals(expectedtext,actualtext);
     }
- */
-/*
+
     @Test
     public void comparetwoproducts() {
         driver.get("http://live.techpanda.org/index.php/");
@@ -110,8 +107,7 @@ public class Main {
             }
         }
     }
-*/
-    /*
+
     @Test
     public void register(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -130,9 +126,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-
-/*
+   
     @Test
     public void sharewishlist(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -151,8 +145,7 @@ public class Main {
         String actualtxt=driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div/div[1]/ul/li/ul/li/span")).getText();
         Assert.assertEquals(expectedtxt,actualtxt);
     }
- */
-/*
+
     @Test
     public void purschaseproductsandplaceorder() {
         driver.get("http://live.techpanda.org/index.php/");
@@ -189,8 +182,7 @@ public class Main {
         String actual = driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]/h1")).getText();
         Assert.assertEquals(expected, actual);
     }
-*/
-    /*
+
     @Test
     public void saveorders(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -216,9 +208,7 @@ public class Main {
             }
         }
     }
-     */
-
-    /*
+     
     @Test
     public void reorder(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -245,8 +235,7 @@ public class Main {
         String actual=driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]/h1")).getText();
         Assert.assertEquals(expected,actual);
     }
-     */
-/*
+
     @Test
     public void verifydiscountcoupon(){
         driver.get("http://live.techpanda.org/index.php/");
@@ -267,5 +256,5 @@ public class Main {
 
     }
 
- */
+
 }
