@@ -219,55 +219,33 @@ public class Main {
      */
 
     /*
-        @Test
-        public void reorder(){
-            driver.get("http://live.techpanda.org/index.php/");
-            driver.findElement(By.xpath("//*[@id=\"header\"]/div/div[2]/div/a")).click();
-            driver.findElement(By.xpath("//*[@id=\"header-account\"]/div/ul/li[1]/a")).click();
-            driver.findElement(By.name("login[username]")).sendKeys("hatemmadouh22@gmail.com");
-            driver.findElement(By.id("pass")).sendKeys("2278174Hd");
-            driver.findElement(By.xpath("//*[@id=\"send2\"]")).click();
-            driver.findElement(By.xpath("//*[@id=\"my-orders-table\"]/tbody/tr/td[6]/span/a[2]")).click();
-            driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/input")).sendKeys("2");
-            driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/button")).click();
-            String expectedprice="$7,440.00";
-            String actualprice=driver.findElement(By.xpath("//*[@id=\"shopping-cart-totals-table\"]/tfoot/tr/td[2]/strong/span")).getText();
-            Assert.assertEquals(expectedprice,actualprice);
-            driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/div[3]/div/ul/li[1]/button")).click();
-            Select drp=new Select(driver.findElement(By.xpath("//*[@id=\"billing-address-select\"]")));
-            drp.selectByVisibleText("New Address");
-            driver.findElement(By.xpath("//*[@id=\"billing-buttons-container\"]/button")).click();
-            driver.findElement(By.xpath("//*[@id=\"shipping-method-buttons-container\"]/button")).click();
-            driver.findElement(By.id("p_method_checkmo")).click();
-            driver.findElement(By.xpath("//*[@id=\"payment-buttons-container\"]/button/span/span")).click();
-            driver.findElement(By.xpath("//*[@id=\"review-buttons-container\"]/button/span/span")).click();
-            String expected = "YOUR ORDER HAS BEEN RECEIVED.";
-            String actual=driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]/h1")).getText();
-            Assert.assertEquals(expected,actual);
-
-        }
-    */
-
-/*
     @Test
-    public void verifydiscountcoupon() {
+    public void reorder(){
         driver.get("http://live.techpanda.org/index.php/");
         driver.findElement(By.xpath("//*[@id=\"header\"]/div/div[2]/div/a")).click();
         driver.findElement(By.xpath("//*[@id=\"header-account\"]/div/ul/li[1]/a")).click();
         driver.findElement(By.name("login[username]")).sendKeys("hatemmadouh22@gmail.com");
         driver.findElement(By.id("pass")).sendKeys("2278174Hd");
         driver.findElement(By.xpath("//*[@id=\"send2\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"nav\"]/ol/li[1]/a")).click();
-        driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/h2/a")).click();
-        driver.findElement(By.xpath("//*[@id=\"product_addtocart_form\"]/div[4]/div/div/div[2]/button/span/span")).click();
-        WebElement couponcode=driver.findElement(By.xpath("//*[@id=\"coupon_code\"]"));
-        couponcode.sendKeys("GURU50");
-        driver.findElement(By.xpath("//*[@id=\"discount-coupon-form\"]/div/div/div/div/button/span/span")).click();
-        String expected="Coupon code \"GURU50\" was applied.";
-        String actual =driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/ul/li/ul/li/span")).getText();
+        driver.findElement(By.xpath("//*[@id=\"my-orders-table\"]/tbody/tr/td[6]/span/a[2]")).click();
+        driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/input")).sendKeys("2");
+        driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/button")).click();
+        String expectedprice="$7,440.00";
+        String actualprice=driver.findElement(By.xpath("//*[@id=\"shopping-cart-totals-table\"]/tfoot/tr/td[2]/strong/span")).getText();
+        Assert.assertEquals(expectedprice,actualprice);
+        driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/div[3]/div/ul/li[1]/button")).click();
+        Select drp=new Select(driver.findElement(By.xpath("//*[@id=\"billing-address-select\"]")));
+        drp.selectByVisibleText("New Address");
+        driver.findElement(By.xpath("//*[@id=\"billing-buttons-container\"]/button")).click();
+        driver.findElement(By.xpath("//*[@id=\"shipping-method-buttons-container\"]/button")).click();
+        driver.findElement(By.id("p_method_checkmo")).click();
+        driver.findElement(By.xpath("//*[@id=\"payment-buttons-container\"]/button/span/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"review-buttons-container\"]/button/span/span")).click();
+        String expected = "YOUR ORDER HAS BEEN RECEIVED.";
+        String actual=driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]/h1")).getText();
         Assert.assertEquals(expected,actual);
-
     }
 
- */
+     */
+
 }
