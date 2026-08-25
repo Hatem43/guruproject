@@ -41,12 +41,20 @@ public class Main {
     @Test(priority = 2)
     public void sortmobilebyname(){
         List<WebElement> mobilesbeforesort=driver.findElements(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul"));
+            
         List<String> mobilesbeforesortlist=new ArrayList<>();
+        for (WebElement mobile : mobilesbeforesort) {
+        mobilesbeforesortlist.add(mobile.getText());
+}
         Select drpdown=new Select(driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/div[1]/div[1]/div/select")));
         drpdown.selectByVisibleText("Name");
 
         List<WebElement> mobilesaftersort=driver.findElements(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul"));
+       
         List<String> mobilesaftersortlist=new ArrayList<>();
+        for (WebElement mobile : mobilesaftersortlist) {
+        mobilesaftersortlist.add(mobile.getText());
+}
 
         Collections.sort(mobilesbeforesortlist);
         Assert.assertEquals(mobilesbeforesortlist,mobilesaftersortlist);
