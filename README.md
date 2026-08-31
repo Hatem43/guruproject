@@ -1,1 +1,1 @@
-Automation testing using Selenium for techpanda site
+Automation testing for techpanda site using Selenium
